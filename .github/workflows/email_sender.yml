@@ -2,6 +2,7 @@ name: "Send email after workflow"
 
 on:
     workflow_dispatch:
+      #trigger it manually in github action
 
 jobs:
     send_email:
@@ -31,3 +32,5 @@ jobs:
                 RECEIVER_EMAIL: ${{secrets.RECEIVER_EMAIL}}
 
               
+
+    
